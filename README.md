@@ -115,8 +115,7 @@ Open a Pull Request.
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgments
-Thanks to the contributors and the open-source community!
+
 ```pgsql
 
 
