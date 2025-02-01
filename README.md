@@ -66,16 +66,12 @@ The server will be running at http://localhost:3000.
 
 $`GET /faqs`$
 
-### Description: 
-Retrieve all FAQ entries.
-### Response: 
-A list of all FAQs in JSON format.
+**Description:** Retrieve all FAQ entries.
+**Response:***  A list of all FAQs in JSON format.
 
 `POST /faqs`
-
-### Description: 
-Create a new FAQ entry.
-### Request Body:
+**Description:** Create a new FAQ entry.
+**Request Body:**
 
 ```json
 
@@ -85,14 +81,12 @@ Create a new FAQ entry.
 }
 
 ```
-### Response: 
-The newly created FAQ entry.
+**Response:** The newly created FAQ entry.
 
 `PUT /faqs/:id`
 
-### Description: 
-Update an existing FAQ entry.
-### Request Body:
+**Description:** Update an existing FAQ entry.
+**Request Body:**
 ```json
 
 {
@@ -101,18 +95,17 @@ Update an existing FAQ entry.
 }
 
 ```
-### Response: The updated FAQ entry.
+**Response:** The updated FAQ entry.
 
 `DELETE /faqs/:id`
 
 
-### Description: 
-Delete an existing FAQ entry.
+**Description:** Delete an existing FAQ entry.
 ### Response: 
 
 A success message indicating that the FAQ was deleted successfully.
 
-### Contributing
+**Contributing**
 Fork the repository.
 
 Create a new branch: git checkout -b feature-branch.
