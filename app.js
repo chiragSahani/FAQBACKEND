@@ -37,8 +37,9 @@ app.use((err, req, res, next) => {
     return res.status(err.statusCode).json(response);
   }
   console.error("Unexpected Error:", err); // Log the error for debugging
+  winston.error("Unexpected Error:", err); // Log the error for debugging
   const response = new APIResponse(500, null, "Internal Server Error");
   return res.status(500).json(response);
 });
-  winston.error("Unexpected Error:", err); // Log the error for debugging
+
 export { app };
