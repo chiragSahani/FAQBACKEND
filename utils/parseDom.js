@@ -1,6 +1,6 @@
 import { JSDOM } from "jsdom";
 import translate from "@vitalets/google-translate-api";
-import { languages } from "./languages.js";
+import { languages } from "./language.js";
 
 /**
  * Recursively collects all text nodes from a given DOM node.
