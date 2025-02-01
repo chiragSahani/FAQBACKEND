@@ -1,8 +1,18 @@
-const express = require("express");
+import { Router } from "express";
+import {
+  getFAQs,
+  getOneFAQ,
+  createFAQ,
+  updateFAQ,
+  deleteFAQ,
+} from "../controllers/faq.controller.js";
 
-const { register, login } = require("../controller/authController");
-const router = express.Router();
-const router = express.Router();
-router.post("/register", register);
+const router = Router();
 
-module.exports = router;
+router.get("/", getFAQs);
+router.get("/:id", getOneFAQ);
+router.post("/create", createFAQ);
+router.put("/update", updateFAQ);
+router.delete("/delete", deleteFAQ);
+
+export default router;
